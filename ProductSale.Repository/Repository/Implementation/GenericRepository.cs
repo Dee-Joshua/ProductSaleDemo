@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace ProductSaleRepository.Repository.Implementation
 {
-    public class GenericRepository<T> : IGenericRepository where T : class
+    public class GenericRepository<T> : IGenericRepository<T> where T : class
     {
         private readonly AppDbContext _appDbContext;
         private readonly DbSet<T> _dbSet;

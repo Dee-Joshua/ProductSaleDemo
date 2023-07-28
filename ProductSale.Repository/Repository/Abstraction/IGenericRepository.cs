@@ -9,7 +9,7 @@ namespace ProductSaleRepository.Repository.Abstraction
     public interface IGenericRepository<T>
     {
         Task CreateAsync(T entity);
-        void UpdateAsync(T entity);
+        void Update(T entity);
         void RemoveRange(IEnumerable<T> entities);
         void Remove(T entity);
     }
